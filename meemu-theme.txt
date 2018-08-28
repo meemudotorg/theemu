@@ -1,0 +1,6 @@
+app/javascript/fonts/pressstart2p/PressStart2P-Regular.ttf
+app/javascript/mastodon/locales/en.json
+app/javascript/styles/fonts/press-start.scss
+app/javascript/styles/meemu.scss
+config/themes.yml
+config/locales/en.yml
