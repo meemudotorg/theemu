@@ -1,4 +1,5 @@
-default: styles/application.scss
+default: styles/meemu-default.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
 meemu: styles/meemu.scss
+mastodon: styles/application.scss

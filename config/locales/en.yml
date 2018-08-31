@@ -864,9 +864,10 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: High contrast
-    default: Mastodon
+    default: Meemu Default
     mastodon-light: Mastodon (light)
-    meemu: Meemu
+    meemu: Vaporwave?
+    mastodon: Mastodon Default
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
