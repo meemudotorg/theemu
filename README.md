@@ -9,3 +9,6 @@ to use, clone the repo then run
 deploy the same way
 
 `rsync -av --files-from ./meemu-theme.txt . yourname@yourServer:/your/mastodon/root`
+
+
+you probably don't want to change your en.json or en.yml, so remove those from meemu-theme.txt 
