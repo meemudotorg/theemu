@@ -13,6 +13,8 @@ deploy the same way
 
 you probably don't want to change your en.json or en.yml, so remove those from meemu-theme.txt 
 
-if you use them, credit to catgoat@meemu.org would be cool! if you have tweaks or fixes, pull requests are welcome 💜. 
+if you use them, credit to @catgoat@meemu.org would be cool! if you have tweaks or fixes, pull requests are welcome 💜. 
 
 the vaporwave theme is appropriately glitchy, but the purple theme is in good shape (and the default on meemu.org!)
+
+check out the documentation here for how to set up your instance with multiple themes: https://github.com/tootsuite/documentation/blob/master/Running-Mastodon/Customizing.md 
