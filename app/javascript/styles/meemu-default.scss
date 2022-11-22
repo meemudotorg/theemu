@@ -1,8 +1,21 @@
+/* Main background: CR 15.55 against white text */
 $classic-base-color: #261f3f;
 $ui-base-color: $classic-base-color;
+
+/* 'grey' text: CR 4.6 against base */
 $ui-base-lighter-color: #a87ea8;
+
+/* Highlight text: CR 9.0 against base,
+   Reply box: CR 12.16 against black text */
 $ui-primary-color: #9bcbed;
+
+/* Hashtags and @s: CR 7.25 against base,
+   ! CR 1.24 against reply box
+     Is it possible to override the reply box color? Re-using a
+     text color for a background color does not make sense. */
 $ui-secondary-color: #d8a2ba;
+
+/* Winning poll option: CR 5.77 against base */
 $ui-highlight-color: #CC7AFF;
 
 
