@@ -18,5 +18,24 @@ $ui-secondary-color: #d8a2ba;
 /* Winning poll option: CR 5.77 against base */
 $ui-highlight-color: #CC7AFF;
 
+/* Selected toot */
+.detailed-status {
+background: #332a54;
+}
+.detailed-status__action-bar {
+background: #332a54;
+}
+
+/* Replied-to-toot text over toot box */
+.reply-indicator {
+  a {
+    color: var(--fbc-light-gray)  }
+}
+
+/* OCR image description button */
+.link-button {
+  color: #00446c;
+  text-decoration: underline;
+}
 
 @import 'application';
