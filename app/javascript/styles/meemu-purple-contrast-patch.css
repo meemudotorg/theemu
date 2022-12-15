@@ -1,52 +1,48 @@
 /* Increase contrast */
-/* meemu-purple-221234c0.chunk.css | https://queer.party/packs/css/meemu-purple-221234c0.chunk.css */
 .column > .scrollable {
   /* background: #322a4f; */
   background: #261f3f;
 }
 
-.status__relative-time {
-  /* color: #885b8c; */
-  color: #a87ea8;
-}
-
-.status__display-name {
-  /* color: #885b8c; */
-  color: #a87ea8;
+.navigation-bar strong {
+  color: #9bcbed !important;
 }
 
 .status {
-  /* border-bottom: 1px solid #43386a; */
-  border-bottom: 1px solid #524486;
+  /* border-bottom-color: #43386a; */
+  border-bottom-color: #524486;
 }
 
+.status__relative-time,
+.status__display-name,
 .muted .status__content,
 .muted .status__content a,
 .muted .status__content p,
-.muted .status__display-name strong {
-  color: #a87ea8;
-}
-
-.muted .poll {
+.muted .status__display-name strong,
+.muted .poll,
+.status__prepend,
+.status__prepend .status__display-name strong {
   /* color: #885b8c; */
   color: #a87ea8;
 }
-.reply-indicator__content a, .status__content a {
-color: #d8a2ba;
+
+/* hashtags and @s */
+.status__content a {
+  color: #d8a2ba;
 }
-.detailed-status {
-background: #332a54;
+
+/* hashtags and @s in reply box */
+.reply-indicator__content a {
+  color: #885b8c;
 }
+
+.detailed-status,
 .detailed-status__action-bar {
-background: #332a54;
+  background: #332a54;
 }
-
-
-/* meemu-purple-652b2e02.chunk.css | https://queer.party/packs/css/meemu-purple-652b2e02.chunk.css */
 
 .reply-indicator {
-  /* background: var\(--fbc-grey-20; */
-  background: var(--fbc-light-gray);
+  background: #f0f0f4;
 }
 
 .link-button {
@@ -54,6 +50,47 @@ background: #332a54;
   text-decoration: underline;
 }
 
+.icon-button {
+  color: #b576b4;
+}
+
+.navigation-bar .icon-button {
+  color: #fff;
+}
+
+.icon-button.inverted,
+.text-icon-button,
+.character-counter {
+  color: #88588c;
+}
+
+.account__header__fields dt {
+  /* color: #ba8d98; */
+  color: #e8cde6 !important;
+}
+
+.detailed-status__meta,
+.poll__footer,
+.poll__link,
+.attachment-list__list a,
+.status-card,
+.load-more {
+  /* color: #885b8c; */
+  color: #b38bdb;
+}
+
+.button,
+.button .logo-button {
+  /* background: #c870ff */
+	background: #c363ff !important;
+}
+
+.status__content__spoiler-link {
+  color: #fff;
+}
+.spoiler-button__overlay__label {
+	background: rgba(0,0,0,.6);
+}
 
 @media screen and (min-width: 631px) {
   .column,
