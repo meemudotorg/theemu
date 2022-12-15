@@ -58,7 +58,7 @@
   color: #fff;
 }
 
-.icon-button.inverted,
+.icon-button .inverted,
 .text-icon-button,
 .character-counter {
   color: #88588c;
@@ -82,14 +82,25 @@
 .button,
 .button .logo-button {
   /* background: #c870ff */
-	background: #c363ff !important;
+  background: #c363ff !important;
+}
+
+.button .button-secondary {
+  /* color: #9bcbed; */
+  color: #fff;
+}
+
+.button .button-secondary:disabled {
+  /* opacity: .5; */
+  opacity: .7;
 }
 
 .status__content__spoiler-link {
   color: #fff;
 }
+
 .spoiler-button__overlay__label {
-	background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, .6);
 }
 
 @media screen and (min-width: 631px) {

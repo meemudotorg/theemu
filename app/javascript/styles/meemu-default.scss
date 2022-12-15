@@ -24,6 +24,15 @@ $ui-base-color: $classic-base-color;
 }
 */
 
+/* Vote button: CR 3.21 (AA for UI) */
+.button .button-secondary {
+	color: #fff;
+}
+/* Deactivated vote button: CR 5.04 (AA) */
+.button .button-secondary :deactivated {
+	opacity: 0.7;
+}
+
 /* Account view background: CR 11.84 (AAA) against white text
  * (Unknown variable, components.scss):
 .account__header {
