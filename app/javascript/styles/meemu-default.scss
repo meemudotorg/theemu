@@ -157,4 +157,11 @@ $ui-highlight-color: #CC7AFF;
 	text-decoration: underline;
 }
 
+/* Fix domain blocks so that they are even just basically functional */
+.about__domain-blocks__domain h6,
+.about__domain-blocks__domain p {
+  white-space: unset;
+  overflow: initial;
+}
+
 @import 'application';
