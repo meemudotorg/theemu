@@ -1,9 +1,167 @@
-$classic-base-color: #322a4f;
+/* Main/base background: CR 15.55 (AAA) against white text */
+$classic-base-color: #261f3f;
 $ui-base-color: $classic-base-color;
-$ui-base-lighter-color: #885b8c;
+
+/* Left panel background:
+ * (Unknown variable, components.scss)
+.drawer__inner {
+	background: #4d417a;
+}
+*/
+
+/* Toot! and Follow/Unfollow buttons: CR 3.2 (AA for UI) against white text,
+ * would be 6.54 (AA) against black text, but I think that looks worse */
+.button,
+.button .logo-button {
+	background: #c363ff !important;
+}
+/* Hovering over Unfollow button (unknown variable, boost.scss)
+ * CR 4.18 (AA for UI) against white text, would be 5.01 (AA) against black
+.button. logo-button .button--destructive:active,
+.button. logo-button .button--destructive:focus,
+.button. logo-button .button--destructive:hover {
+    background: #df405a;
+}
+*/
+
+/* Vote button: CR 3.21 (AA for UI) */
+.button .button-secondary {
+	color: #fff;
+}
+/* Deactivated vote button: CR 5.04 (AA) */
+.button .button-secondary :deactivated {
+	opacity: 0.7;
+}
+
+/* Account view background: CR 11.84 (AAA) against white text
+ * (Unknown variable, components.scss):
+.account__header {
+	background: #3a315c;
+}
+ * Account header fields box background:
+ * (Unknown variable, components.scss)
+.account__header__bio .account__header__fields {
+	background: #2a2342;
+}
+*/
+
+/* Highlight text: CR 9.0 (AAA) against base,
+ * CR 6.85 (AA) against account view
+ * CR 8.58 against account bio field background #2a2342; */
 $ui-primary-color: #9bcbed;
-$ui-secondary-color: #ba8d98;
+
+/* Selected toot: CR 13.13 (AAA) against white text,
+   CR 6.12 (AA) against @s */
+.detailed-status {
+	background: #332a54;
+}
+.detailed-status__action-bar {
+	background: #332a54;
+}
+
+/* Informational text under highlighted toots and polls, for image
+ * attachment names, in link embeds, and for the load-more text buttons */
+.detailed-status__meta,
+.poll__footer,
+.poll__link,
+.attachment-list__list a,
+.status-card,
+.load-more {
+	color: #b38bdb !important;
+}
+
+/* Reply box: CR 11.70 (AAA) against black text,
+   CR 4.71 (AA) against hashtags and @s */
+.reply-indicator {
+	color: #F0F0F4;
+}
+
+/* Usernames: CR 15.55 (AAA) against base */
+.account__display-name strong, .status__display-name strong {
+	color: #fff !important;
+}
+
+/* 'grey' text: CR 4.6 (AA) against base */
+$ui-base-lighter-color: #a87ea8;
+/* Account name for boost labels */
+.status__prepend,
+.status__prepend .status__display-name strong {
+	color: $ui-base-lighter-color;
+}
+
+/* Border between toots in timelines: CR 1.87 against base
+ * (Not a text element, so no WCAG score) */
+.status {
+	border-bottom-color: #524486;
+}
+
+/* Icons: CR 4.60 against base,
+ * CR 3.88 (Fail) against highlighted toot */
+.icon-button {
+	color: #b576b4;
+}
+
+/* CW labels: 5.35 (AA) against button #885b8c */
+.status__content__spoiler-link {
+	color: #fff;
+}
+/* Image CW overlay buttons: CR 5.74 (AA) against white text */
+.spoiler-button__overlay__label {
+	background: rgba(0,0,0,.6);
+}
+
+/* Username of user, shown above toot box: re-use highlight text color
+ * CR 5.17 (AA) against left panel background */
+.navigation-bar strong {
+	color: $ui-primary-color !important;
+}
+/* Menu button above toot box: CR 8.93 (AAA) against left panel background */
+.navigation-bar .icon-button {
+	color: #fff;
+}
+
+/* Toot box buttons: CR 4.61 (AA) against medium gray
+ * (unknown variable, components.scss)
+.compose-form__buttons-wrapper { background: #ebebeb; }
+*/
+.icon-button.inverted,
+.text-icon-button,
+.character-counter {
+	color: #88588c;
+}
+
+
+/* Hashtags and @s: CR 7.25 (AAA) against base,
+ * Overridden (would be CR 1.89 (Fail)) in reply box
+ * Not used for account view */
+$ui-secondary-color: #d8a2ba;
+
+/* Hashtags and @s in reply box: CR 4.71 (AA) */
+.reply-indicator__content a {
+	color: #885b8c;
+}
+
+/* Account field labels: CR 10.09 (AAA) against background #2a2342; */
+.account__header__fields dt {
+	color: #e8cde6 !important;
+}
+
+/* Winning poll option: CR 5.77 against base
+ * (not a text element, but would be AA) */
 $ui-highlight-color: #CC7AFF;
 
+
+/* image description OCR button: CR 4.68 (AA) */
+.link-button {
+	color: #00446c;
+	text-decoration: underline;
+}
+
+/* Fix domain blocks so that they are even just basically functional */
+.about__domain-blocks__domain h6,
+.about__domain-blocks__domain p {
+  white-space: unset;
+  overflow: initial;
+}
 
 @import 'application';
