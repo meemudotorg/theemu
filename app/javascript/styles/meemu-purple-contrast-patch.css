@@ -1,0 +1,119 @@
+/* Increase contrast */
+.column > .scrollable {
+  /* background: #322a4f; */
+  background: #261f3f;
+}
+
+.navigation-bar strong {
+  color: #9bcbed !important;
+}
+
+.status {
+  /* border-bottom-color: #43386a; */
+  border-bottom-color: #524486;
+}
+
+.status__relative-time,
+.status__display-name,
+.muted .status__content,
+.muted .status__content a,
+.muted .status__content p,
+.muted .status__display-name strong,
+.muted .poll,
+.status__prepend,
+.status__prepend .status__display-name strong {
+  /* color: #885b8c; */
+  color: #a87ea8;
+}
+
+/* hashtags and @s */
+.status__content a {
+  color: #d8a2ba;
+}
+
+/* hashtags and @s in reply box */
+.reply-indicator__content a {
+  color: #885b8c;
+}
+
+.detailed-status,
+.detailed-status__action-bar {
+  background: #332a54;
+}
+
+.reply-indicator {
+  background: #f0f0f4;
+}
+
+.link-button {
+  color: #00446c;
+  text-decoration: underline;
+}
+
+.icon-button {
+  color: #b576b4;
+}
+
+.navigation-bar .icon-button {
+  color: #fff;
+}
+
+.icon-button .inverted,
+.text-icon-button,
+.character-counter {
+  color: #88588c;
+}
+
+.account__header__fields dt {
+  /* color: #ba8d98; */
+  color: #e8cde6 !important;
+}
+
+.detailed-status__meta,
+.poll__footer,
+.poll__link,
+.attachment-list__list a,
+.status-card,
+.load-more {
+  /* color: #885b8c; */
+  color: #b38bdb;
+}
+
+.button,
+.button .logo-button {
+  /* background: #c870ff */
+  background: #c363ff !important;
+}
+
+.button .button-secondary {
+  /* color: #9bcbed; */
+  color: #fff;
+}
+
+.button .button-secondary:disabled {
+  /* opacity: .5; */
+  opacity: .7;
+}
+
+.status__content__spoiler-link {
+  color: #fff;
+}
+
+.spoiler-button__overlay__label {
+  background: rgba(0, 0, 0, .6);
+}
+
+@media screen and (min-width: 631px) {
+  .column,
+  .drawer {
+    /* background: #2a2440; */
+    background: #1c172d;
+  }
+}
+
+/* Fix domain blocks so that they are even just basically functional */
+.about__domain-blocks__domain h6,
+.about__domain-blocks__domain p {
+  white-space: unset;
+  overflow: initial;
+}
